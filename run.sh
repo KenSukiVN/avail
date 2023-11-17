@@ -7,6 +7,6 @@ chmod +x entrypoint.sh
 
 docker  cp entrypoint.sh ${CONTAINER_ID}:/entrypoint.sh
 
-docker restart CONTAINER_ID
+docker restart ${CONTAINER_ID}
 
-docker logs -f --tail 100 CONTAINER_ID
+docker logs -f --tail 100 ${CONTAINER_ID}
